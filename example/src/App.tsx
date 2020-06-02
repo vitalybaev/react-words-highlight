@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
-import { ExampleComponent } from 'react-words-highlight'
-import 'react-words-highlight/dist/index.css'
+import { WordsHighlight } from 'react-words-highlight'
 
-const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+const App = (): ReactNode => {
+  return (
+    <WordsHighlight
+      text="Create React Library Example 😄"
+      query={'React Library'}
+    />
+  )
 }
 
 export default App

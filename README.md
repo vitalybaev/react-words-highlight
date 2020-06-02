@@ -15,12 +15,18 @@ npm install --save react-words-highlight
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-words-highlight'
-import 'react-words-highlight/dist/index.css'
+import { WordsHighlight } from 'react-words-highlight'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return (
+      <WordsHighlight
+        text="Some text to highlight"
+        query="text highlight"
+        highlightTag="strong"
+        highlightClassName="my-class"
+      />
+    );
   }
 }
 ```
