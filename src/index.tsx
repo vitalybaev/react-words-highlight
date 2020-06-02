@@ -19,7 +19,7 @@ const WordsHighlight = ({
   const chunks = highlightWords({ text, query, matchExactly })
 
   return (
-    <>
+    <React.Fragment>
       {chunks.map((chunk) => {
         if (!chunk.match) {
           return <span key={chunk.key}>{chunk.text}</span>
@@ -33,7 +33,7 @@ const WordsHighlight = ({
           </Tag>
         )
       })}
-    </>
+    </React.Fragment>
   )
 }
 
