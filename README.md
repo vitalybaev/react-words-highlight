@@ -1,8 +1,13 @@
 # react-words-highlight
 
-> Tiny React component for highlight words in text
+> Tiny **(~1kb min gz)** React component for highlight words in text built with [highlight-words](https://github.com/tricinel/highlight-words)
 
-[![NPM](https://img.shields.io/npm/v/react-words-highlight.svg)](https://www.npmjs.com/package/react-words-highlight) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+![Test](https://github.com/vitalybaev/react-words-highlight/workflows/Test/badge.svg?branch=master)
+[![NPM](https://img.shields.io/npm/v/react-words-highlight.svg)](https://www.npmjs.com/package/react-words-highlight)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/react-words-highlight)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+![licence](https://img.shields.io/npm/l/react-words-highlight)
+
 
 ## Install
 
