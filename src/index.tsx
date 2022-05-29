@@ -1,12 +1,12 @@
-import * as React from 'react'
-import highlightWords from 'highlight-words'
+import * as React from 'react';
+import highlightWords from 'highlight-words';
 
 interface Props {
-  text: string
-  query: string
-  matchExactly?: boolean
-  highlightClassName?: string
-  highlightTag?: React.ElementType
+  text: string;
+  query: string;
+  matchExactly?: boolean;
+  highlightClassName?: string;
+  highlightTag?: React.ElementType;
 }
 
 const WordsHighlight = ({
@@ -14,29 +14,29 @@ const WordsHighlight = ({
   query,
   matchExactly,
   highlightTag = 'mark',
-  highlightClassName
+  highlightClassName,
 }: Props): React.ReactElement => {
-  const chunks = highlightWords({ text, query, matchExactly })
+  const chunks = highlightWords({ text, query, matchExactly });
 
   return (
     <React.Fragment>
       {chunks.map((chunk) => {
         if (!chunk.match) {
-          return <span key={chunk.key}>{chunk.text}</span>
+          return <span key={chunk.key}>{chunk.text}</span>;
         }
 
-        const Tag = highlightTag
+        const Tag = highlightTag;
 
         return (
           <Tag key={chunk.key} className={highlightClassName}>
             {chunk.text}
           </Tag>
-        )
+        );
       })}
     </React.Fragment>
-  )
-}
+  );
+};
 
-WordsHighlight.displayName = 'WordsHighlight'
+WordsHighlight.displayName = 'WordsHighlight';
 
-export { WordsHighlight }
+export { WordsHighlight };
