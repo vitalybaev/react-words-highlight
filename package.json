@@ -1,6 +1,6 @@
 {
   "name": "react-words-highlight",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tiny React component for highlight words in text",
   "author": "vitalybaev",
   "license": "MIT",
